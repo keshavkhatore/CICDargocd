@@ -46,7 +46,7 @@ jobs:
         with:
           aws-access-key-id: AKIA2XI5PNE6VEAKSMH7
           aws-secret-access-key: 'wiY3YKbk2vtnh7D0mcBR6VIzYo21mdyMImB5H/HP'
-          aws-region: ap-south-1  # Specify your AWS region
+          aws-region: ${{ vars.AWS_MUMBAI_REGION }}  # Specify your AWS region
 
       - name: Login to Amazon ECR
         id: login-ecr
